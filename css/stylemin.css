@@ -1328,6 +1328,15 @@ section {
   background-color: #6C55F9;
 }
 
+.btn-outline {
+  border-color: #D7D5E9;
+  color: #645F88;
+}
+
+.btn-outline:hover {
+  background-color: #F6F5FC;
+}
+
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
