@@ -295,6 +295,12 @@ h6 {
   }
 }
 
+.navbar-brand {
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -1376,6 +1382,10 @@ navbar-light .navbar-nav .nav-link {
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
   color: #6C55F9;
+}
+
+.text-primary {
+  color: #02BBC1 !important;
 }
 
 /*--------------------------------------------------------------
