@@ -1337,6 +1337,14 @@ section {
   background-color: #F6F5FC;
 }
 
+.btn {
+  transition: all .2s ease;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
