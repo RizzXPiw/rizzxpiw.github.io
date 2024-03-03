@@ -1362,6 +1362,22 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.nav-item {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.nav-item.active a {
+   color: #02BBC1;
+}
+
+.nav-item .active {
+   opacity: 1;
+   transform: translateY(0);
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     margin-top: 0;
