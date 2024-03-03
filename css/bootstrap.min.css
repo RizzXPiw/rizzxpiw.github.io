@@ -10808,9 +10808,18 @@ textarea.form-control-lg {
         gap: 3rem!important;
     }
 
-    .text-lg-start {
-        text-align: left!important;
-    }
+    @media (max-width: 767px) {
+  .text-lg-start {
+    text-align: left !important;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .text-lg-start {
+    text-align: left !important;
+    margin-right: 10px;
+    display: inline-block;
+  }
+      }
 
     .text-lg-end {
         text-align: right!important;
