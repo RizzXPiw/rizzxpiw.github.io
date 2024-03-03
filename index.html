@@ -33,32 +33,48 @@
 
 <body>
   <header>
-   <nav class="navbar navbar-expand-lg navbar-light navbar-float">
-   <div class="container">
-    <a class="navbar-brand" style="color: black;">RIZZPIW <span style="color: #02BBC1";>STORE</span></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+     <nav class="navbar navbar-expand-lg navbar-light navbar-float">
+    <div class="container">
+      <a class="navbar-brand" style="color: black";>RIZZPIW <span style="color: #02BBC1">STORE</span></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html#cara-order" class="nav-link">Cara Order</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html#pricing" class="nav-link">List Harga</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#cara-order" class="nav-link">Cara Order</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#pricing" class="nav-link">List Harga</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <script>
+    const navItems = document.querySelectorAll('.navbar-nav .nav-item');
+    function showNavItems() {
+      navItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, index * 200); // Animasi muncul setiap 200 milidetik
+      });
+    }
+    showNavItems();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <!-- Animasi -->  
   <div id="page-top"></div>
   <section id="hero">
     <div class="container">
