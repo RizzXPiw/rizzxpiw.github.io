@@ -1355,6 +1355,12 @@ section {
   min-height: 70px;
   z-index: 1000;
 }
+.navbar-brand {
+  font-weight: 600;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     margin-top: 0;
