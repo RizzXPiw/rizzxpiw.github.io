@@ -1,4 +1,16 @@
-    .sidebar-container {
+
+.container2 {
+      max-width: 200px;
+      text-align: right;
+      margin-right: 20px;
+      position: absolute; 
+      right: 200px; 
+      top: 10px; 
+      float: right;
+      margin-top: 10px;
+}
+
+.sidebar-container {
       position: fixed;
       top: 0;
       right: 0;
