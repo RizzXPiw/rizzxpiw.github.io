@@ -61,6 +61,8 @@
     transition: 0.3s;
     font-size: 24px;
     z-index: 1001;
+    border-radius: 5px;
+    border: 1px solid #02BBC1;
     line-height: 1; /* Menyesuaikan tinggi garis tiga */
     font-weight: bold; /* Membuat garis tiga menjadi lebih tebal */
   }
