@@ -1,0 +1,75 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: -100%; /* Menyembunyikan sidebar di luar layar atas */
+    left: 0;
+    background-color: white;
+    overflow-y: auto;
+    transition: top 0.5s ease; /* Menggunakan transition pada top */
+    z-index: 1000;
+    border-right: 2px solid #ccc; /* Menambahkan border kanan */
+    box-sizing: border-box; /* Menghitung border dalam kalkulasi lebar */
+  }
+
+  .sidebar.show {
+    top: 0; /* Mengatur posisi sidebar ke atas */
+  }
+
+  .sidebar-content {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    padding-left: 0; /* Menghapus padding kiri */
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .sidebar-menu li {
+    padding: 12px 0;
+  }
+
+  .sidebar-menu li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    font-size: 20px;
+  }
+
+  .sidebar-menu li a:hover {
+    color: #02BBC1;
+  }
+
+  .openbtn {
+    position: fixed;
+    top: 10px;
+    right: 10px; /* Mengatur posisi tombol sidebar ke kanan */
+    padding-right: 10px; /* Menjaga jarak tombol sidebar dengan sisi kanan layar */
+    color: #02BBC1;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 24px;
+    z-index: 1001;
+    line-height: 1; /* Menyesuaikan tinggi garis tiga */
+    font-weight: bold; /* Membuat garis tiga menjadi lebih tebal */
+  }
+
+  .openbtn:hover {
+    color: #02BBC1;
+  }
+
+  .menu-icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
