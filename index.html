@@ -29,44 +29,30 @@
   <link href="css/stylemin.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <div class="sidebar-container">
-  <div class="container2">
-      <strong><a style="color: black;">RIZZPIW <a style="color: #02BBC1;">STORE</a></a></strong>
-    </div>
-    <!-- Button to open sidebar -->
-    <button class="openbtn" onclick="toggleNav()">☰</button>
-    <!-- Sidebar -->
-    <div id="mySidebar" class="sidebar">
-      <strong><a href="index.html" class="active">Home</a></strong>
-      <strong><a href="index.html#cara-order">Cara Order</a></strong>
-      <strong><a href="index.html#pricing">List Harga</a></strong>
-      <strong><a href="index.html#contact">Contact</a></strong>
-    </div>
+ <button class="openbtn" onclick="toggleNav()"><i class="menu-icon fas fa-bars"></i></button>
+
+<div class="sidebar" id="mySidebar">
+  <div class="sidebar-content">
+    <ul class="sidebar-menu">
+      <strong><li><a href="index.html">Home</a></li></strong>
+      <strong><li><a href="index.html#cara-order">Cara Order</a></li></strong>
+      <strong><li><a href="index.html#pricing">List Harga</a></li></strong>
+      <strong><li><a href="index.html#contact">Contact</a></li></strong>
+    </ul>
   </div>
+</div>
 
-  <!-- JavaScript for toggling sidebar and changing color -->
-  <script>
-    function toggleNav() {
-      var sidebar = document.getElementById("mySidebar");
-      sidebar.classList.toggle('show');
-    }
-
-    var links = document.querySelectorAll('.sidebar a');
-    links.forEach(function (link) {
-      link.addEventListener('click', function () {
-        links.forEach(function (l) {
-          l.classList.remove('active');
-        });
-        this.classList.add('active');
-        var lastLink = links[links.length - 1];
-        sidebar.style.backgroundColor = window.getComputedStyle(lastLink).getPropertyValue('color');
-      });
-    });
-  </script>
+<script>
+function toggleNav() {
+  var sidebar = document.getElementById("mySidebar");
+  sidebar.classList.toggle('show');
+}
+</script>
 
   <!-- Animasi -->  
   <div id="page-top"></div>
