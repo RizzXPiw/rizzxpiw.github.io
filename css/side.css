@@ -16,7 +16,7 @@
 
   .sidebar {
     width: 100%;
-    height: 250px;
+    height: 280px;
     position: fixed;
     top: -100%; /* Menyembunyikan sidebar di luar layar atas */
     left: 0;
