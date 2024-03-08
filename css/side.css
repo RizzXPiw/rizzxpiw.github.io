@@ -93,7 +93,7 @@
 
   /* Menambahkan garis putih di belakang tombol sidebar */
   .sidebar-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
