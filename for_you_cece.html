@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucin untuk Cece</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #d76d85;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 1rem;
+      transition: opacity 0.5s;
+    }
+
+    .heart {
+      font-size: 3rem;
+      margin: 1rem 0;
+      color: #d76d85;
+      animation: pulse 1.5s infinite;
+      user-select: none; /* Prevent text selection */
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 10px 20px;
+      background: #d76d85;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      outline: none; 
+      -webkit-tap-highlight-color: transparent; 
+      user-select: none; 
+    }
+
+    .btn:hover {
+      background: #c65a74;
+    }
+
+    .btn:active {
+      transform: scale(0.9); /* Button click animation with scale */
+      background: #b65a74; /* Change color on click */
+    }
+
+    #message {
+      display: none;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #333;
+      opacity: 0;
+      transition: opacity 0.3s ease; /* Faster fade */
+      font-weight: 600; /* Make the message bold */
+    }
+
+    #message.visible {
+      display: block;
+      opacity: 1; /* Fade in */
+    }
+
+    #message.hidden {
+      opacity: 0; /* Fade out */
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Untuk Cece</h1>
+    <div class="heart">❤️</div>
+    <p>Aku nggak butuh alasan buat suka kamu, cukup lihat kamu aja udah bikin hariku cerah!</p>
+    <button class="btn" onclick="toggleMessage()">Klik untuk Pesan Rahasia</button>
+    <p id="message" class="hidden">Ce, sebenarnya aku suka sama kamu! 💖</p>
+  </div>
+
+  <script>
+    function toggleMessage() {
+      const message = document.getElementById('message');
+      const isVisible = message.classList.contains('visible');
+      
+      if (isVisible) {
+        // Fade out with a quicker transition
+        message.classList.remove('visible');
+        message.classList.add('hidden');
+        setTimeout(() => {
+          message.style.display = 'none';
+        }, 300); 
+      } else {
+        // Fade in
+        message.style.display = 'block'; 
+        setTimeout(() => {
+          message.classList.remove('hidden');
+          message.classList.add('visible');
+        }, 20); // Short delay to trigger the transition
+      }
+    }
+  </script>
+</body>
+</html>
